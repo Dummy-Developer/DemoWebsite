@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://www.keysight.com/my/en/home.html"><img style="width:75%; margin-top:-20px" src="https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg" alt="Image">  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="assets/pic1.png" alt="Image" style="height:500px">           
+      </div>
+
+      <div class="item">
+        <img src="assets/pic2.png" alt="Image">
+        <div class="carousel-caption">          
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>Supplier Resources</h3><br>
+  <p style="text-align:justify; margin:20px;">Keysight Technologies, Inc.'s relationships with suppliers are of great strategic importance. Common sense, good judgment, and the highest standards of integrity will be used in working with our suppliers. The results Keysight Technologies seeks will not occur from random sourcing or from selecting suppliers solely based on competitive quotations. It will result from making the correct selection of suppliers, and then working closely with them in specific areas to improve quality and productivity.
+
+        The basic strategy for establishing these "working relationships" is through the establishment of mutual performance expectations and measures, feeding back the results, initiating corrective actions to ensure continuous performance improvements, and over time, rewarding the best with the opportunity for more business through new R&D products and product transfers. </p>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="https://about.keysight.com/en/quality/Keysight_SBC.pdf"><img style="height:200px; width:350px;" src="https://jnj.brightspotcdn.com/dims4/default/016565d/2147483647/crop/888x500%2B0%2B0/resize/910x512/quality/90/?url=http%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2F2b%2Ff6%2Ffafb5e1643d093c5fa2146ca319f%2Fcoc-hero-02-1000x500.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+      <p>Business Conduct</p>
+    </div>
+    <div class="col-sm-4"> 
+      <a href="https://about.keysight.com/en/supplier/env_expectations.shtml"><img style="height:200px; width:350px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_10dp2n_uXA7UkaUVHspXn523qTCJi_IR78_kg_D7F-FrKy4U" class="img-responsive" style="width:100%" alt="Image"></a>
+      <p>Environmental and Social Responsibility Expectations</p>    
+    </div>
+    <div class="col-sm-4"> 
+        <a href="https://about.keysight.com/en/supplier/supplier_diversity.shtml"><img style="height:200px; width:350px;" src="http://aspire2consult.com/wp-content/uploads/2015/12/supplierdiversitylogo.gif" class="img-responsive" style="width:100%" alt="Image"></a>
+        <p>Supplier Diversity</p>    
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
